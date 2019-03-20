@@ -2,7 +2,7 @@
 
 eval "$(ssh-agent -s)" &&
 ssh-add -k ~/.ssh/id_rsa &&
-cd /home/ubuntu/travis_API_dari_testdocker
+cd /home/ubuntu/travis_API_dari_testdocker2
 git pull
 
 source ~/.profile
