@@ -1,0 +1,29 @@
+[2019-03-18 22:30:44,225] {/home/alphatech/.local/lib/python3.6/site-packages/flask/app.py:1761} ERROR - Exception on /client [GET]
+Traceback (most recent call last):
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 103, in wrapper
+    verify_jwt_in_request()
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data = _decode_jwt_from_request(request_type='access')
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 267, in _decode_jwt_from_request
+    decoded_token = decode_token(encoded_token, csrf_token)
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask_jwt_extended/utils.py", line 105, in decode_token
+    allow_expired=allow_expired
+  File "/home/alphatech/.local/lib/python3.6/site-packages/flask_jwt_extended/tokens.py", line 138, in decode_jwt
+    leeway=leeway, options=options)
+  File "/home/alphatech/.local/lib/python3.6/site-packages/jwt/api_jwt.py", line 104, in decode
+    self._validate_claims(payload, merged_options, **kwargs)
+  File "/home/alphatech/.local/lib/python3.6/site-packages/jwt/api_jwt.py", line 134, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/home/alphatech/.local/lib/python3.6/site-packages/jwt/api_jwt.py", line 175, in _validate_exp
+    raise ExpiredSignatureError('Signature has expired')
+jwt.exceptions.ExpiredSignatureError: Signature has expired

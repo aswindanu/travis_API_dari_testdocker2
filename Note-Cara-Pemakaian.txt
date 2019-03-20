@@ -1,0 +1,46 @@
+#========== Auth ==========:
+POST:
+
+===========================
+#========== ADMIN ==========:
+GET(admin):
+
+POST(admin):
+
+PUT(admin):
+
+DELETE(admin):
+
+=============================
+#========== Barang ==========:
+GET(all):
+
+POST(admin):
+
+PUT(admin):
+
+DELETE(admin):
+
+===========================
+#========== Cart ==========:
+GET(admin/client):
+
+POST(admin/client):
+
+PUT(admin/client):
+
+DELETE(admin/client):
+
+=============================
+#========== Client ==========:
+GET(admin/client):
+
+POST(admin/client):
+
+PUT(admin/client):
+
+DELETE(admin/client):
+
+============================================
+#========== Users(Admin & Client) ==========:
+#TABEL
